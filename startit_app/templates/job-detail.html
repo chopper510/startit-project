@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ job.title }} {% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<section class="job-detail">
+    <div class="container">
+        <h1 class="title">{{ job.title }}</h1>
+        <h2 class="title_name">{{ job.company }}</h2>
+        <h2 class="job-detail__data">{{ job.experience }}</h2>
+        <p class="job-detail__container"><strong>Описание афиши: </strong>{{ job.description }}</p>
+        <img src="{{ job.image }}" alt="" class="job-detail__img">
+        <div class="job-detail__skills">
+            <h3 class="job-detail__title">Контакты</h3>
+            <ul class="job-detail__add">
+                <li>Адрес: {{ job.address }} </li>
+                <li>Телефон: {{ job.phone }} </li>
+                <li>E-mail: {{ job.email }} </li>
+            </ul>
+        </div>
+        <p class="jov-detail__content"><strong>Дата публикации: </strong>{{ job.created_at }}</p>
+        
+    </div>
+</section>
+
+{% else %}
+
+<section class="access">
+    <div class="container">
+        <h1 class="title">Вы анонимный пользователь</h1>
+        <p class="dark-text">Чтобы работать с приложением надо, вам нужно будет пройти регистрацию и авторизацию</p>
+        <div class="access-action">
+            <a href="{% url 'sign_up_page' %}" class="dark-button">Регистрация</a>
+            <a href="{% url 'login_page' %}" class="dark-button">Вход</a>
+        </div>
+    </div>
+</section>
+
+{% endif %}
+
+{% endblock %}

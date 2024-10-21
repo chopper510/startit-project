@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+main {
+    
+    min-height: 100vh;
+    background-color: #000000;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+   
+   
+}
+:root{
+    --orange:#FF3B30;
+    --liteorange:#FF645B;
+    --black:#000000;
+    --white:#FFFFFF;
+}
+.container{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.header{
+    padding: 20px 0;
+    background-color: #FF3B30;
+}
+.img-header{
+    background-color: #FF3B30;
+}
+.menu-button{
+    cursor: pointer ;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    width: 32px;
+    height: 32px;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+   background-color: transparent ;
+}
+#menu-list{
+    display: none;
+    background-color: #FF3B30 ;
+    padding: 20px 0;
+    position: relative;
+}
+.menu-list .menu-list__item{
+    list-style: none;
+    
+}
+.menu-list__item{   
+    margin-bottom: 10px;
+    
+}
+.menu-list__link{
+    text-decoration: none ;
+    color: var(--white);
+  
+}
+.menu-list__link img{
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+.categories{
+    padding: 30px 0;
+    
+
+}
+.categories-list,.job-detail , .auth{
+    padding: 30px 0;
+}
+.category-item{
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-decoration: none ;
+    color: var(--white);
+    background-color: var(--liteorange);
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.4s ease-in-out;
+}
+.category-item:hover{
+    background-color: var(--orange);
+}
+.title-category{
+ color: #FFF;
+
+text-align: center;
+font-family: Inter;
+font-size: 46px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -3.68px;
+text-transform: uppercase;
+}
+.title_afish{
+    color: #FFF;
+
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -2.4px;
+text-transform: uppercase;
+padding: 20px;
+}
+
+.title-afish{
+    color: #FF3B30;
+text-align: center;
+font-family: Inter;
+font-size: 46px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+letter-spacing: -3.68px;
+text-transform: uppercase;
+background-color: #000000;
+}
+.card-button{
+    display: inline-block; 
+    border-radius: 20px;
+    background: #FFF;
+    color: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #000; 
+    transition: all 0.3s ease; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+
+}
+.card-button:hover {
+    background: #000;
+    color: #FFF; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
+    border-color: #FFF; 
+}
+.card-button:active {
+    background: #333;
+    box-shadow: none; 
+    transform: translateY(2px); 
+}
+.button-succes{
+    width: 100%;
+height: 70px;   
+flex-shrink: 0;
+border-radius: 20px;
+background: #FF3B30;
+margin-top: 10px;
+}
+.jobs-card{
+    background-color: var(--orange);
+    padding: 15px ;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.jobs-cards{
+    background-color: var(--liteorange);
+    padding: 15px ;
+    border-radius: 20px;
+    margin-bottom: 20px; 
+}
+
+.jobs-card__name{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+        font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.6px;
+    margin-bottom: 5px;
+}
+.jobs-card__company{
+    color: #FFF;
+
+    
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.12px;
+    margin-bottom: 5px;
+}
+.jobs-card__title{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    margin-bottom: 5px;
+}
+.job-detail .title{
+    margin-bottom: 10px;
+}
+
+.job-detail__data{
+    color: var(--black);
+}
+.job-detail__container{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.12px;
+    
+}
+.jobs-card__salary{
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    margin-bottom: 6px;
+}
+.job-detail__data{
+    color: var(--orange);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.title{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -2.32px;
+    margin-bottom: 10px;
+}
+.title_name{
+    color: #FFF;
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    margin-bottom: 10px;
+}
+.job-detail__img{
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 27px;
+
+}
+.job-detail__add{
+    background-color: #FF3B30;
+    border-radius: 10px;
+    height: 100px
+    
+}
+.job-detail__skills{
+    padding: 10px;
+    background-color: #FF3B30;
+    color: var(--white);
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+.job-detail__title{
+    margin-bottom: 10px;
+  
+}
+.job-detail__add {
+    font-size: 15px;
+    padding: 10px;
+    list-style: none;
+}
+.job-detail__add li {
+    padding: 6px;
+    
+    justify-content: left;
+}
+.job-detail__content{
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-left: 1px;
+    margin-top: 10px;
+}
+.job-detail__content{
+    color: #FFFFFF;
+}
+.button_categories{
+    width: 400px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FF3B30;
+    margin-left: 40px;
+}
+.button_guide{
+    width: 400px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FF3B30;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 15px
+}
+.button-text{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -2.4px;
+    text-transform: uppercase;
+}
+.help{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.28px;
+}
+.help-link{
+        color: #FF3B30;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.28px;
+}
+
+.helptext{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.28px;
+}
+
+.auth form{
+        margin: 20px 0;
+}
+
+.auth label {
+    display: block;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -1.28px;
+}
+
+.auth input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: var(--orange);
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.helptext{
+    display: none;
+}
+
+.access {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.dark-button {
+    color: var(--liteorange);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    text-decoration: none ;
+    color: var(--white);
+    background-color: var(--liteorange);
+    border-radius: 30px;
+    padding: 10px 25px;
+    transition: 0.4s ease-in-out;
+    margin-top: 10px;
+}
